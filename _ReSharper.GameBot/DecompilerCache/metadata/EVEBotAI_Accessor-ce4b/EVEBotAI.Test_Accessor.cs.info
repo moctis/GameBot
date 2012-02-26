@@ -1,0 +1,11 @@
+R# version: 5.0.1659.36
+assembly EVEBotAI_Accessor, Version=0.0.0.0, Culture=neutral
+  file D:\My Projects\GameBot\TestProject1\obj\Debug\EVEBotAI_Accessor.dll mtime 2012-02-16 02:36:52
+referenced assembly Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file D:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll mtime 2010-03-19 07:02:22
+referenced assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll mtime 2011-11-21 15:31:18
+  file C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Profile\Client\mscorlib.dll mtime 2010-03-18 12:31:26
+  file C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll mtime 2010-03-18 12:31:26
+referenced assembly EVEBotAI
+  file D:\My Projects\GameBot\EVEBotAI\bin\Debug\EVEBotAI.dll mtime 2012-02-16 02:36:39

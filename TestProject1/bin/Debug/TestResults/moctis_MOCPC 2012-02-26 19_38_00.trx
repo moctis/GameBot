@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c53fa35c-9e0c-4951-8b9e-56c14f0c687a" name="moctis@MOCPC 2012-02-26 19:38:00" runUser="MocPC\moctis" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="368e879d-e959-4889-810e-dd16780118e7">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="moctis_MOCPC 2012-02-26 19_38_00" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-26T19:38:00.2586484+07:00" queuing="2012-02-26T19:38:00.7918515+07:00" start="2012-02-26T19:38:01.3660703+07:00" finish="2012-02-26T19:38:02.0496640+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="SaveToFileTest" storage="d:\projects\gamebot\testproject1\bin\debug\testproject1.dll" id="94a4fce1-daf8-08b1-29f8-9b994fcdbe1b">
+      <Execution timeOut="1800000" id="37cc8456-f6e5-4d4a-b9ed-d579ea2cf0be" />
+      <TestMethod codeBase="D:/Projects/GameBot/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.EveScreenTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SaveToFileTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="94a4fce1-daf8-08b1-29f8-9b994fcdbe1b" executionId="37cc8456-f6e5-4d4a-b9ed-d579ea2cf0be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="37cc8456-f6e5-4d4a-b9ed-d579ea2cf0be" testId="94a4fce1-daf8-08b1-29f8-9b994fcdbe1b" testName="SaveToFileTest" computerName="MOCPC" duration="00:00:00.3501767" startTime="2012-02-26T19:38:01.4549375+07:00" endTime="2012-02-26T19:38:01.9148984+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37cc8456-f6e5-4d4a-b9ed-d579ea2cf0be">
+    </UnitTestResult>
+  </Results>
+</TestRun>

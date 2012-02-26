@@ -1,0 +1,173 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="3C06AAA0-8139-439F-92BC-648FBFF73244/f:GDI32.cs" caret="211" fromTop="8" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Scripts/f:html5.js" caret="213" fromTop="2" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/f:ApplicationHelper.cs" caret="0" fromTop="0" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Views/d:Home/d:M/f:Index.cshtml" caret="206" fromTop="13" />
+      <File id="3C06AAA0-8139-439F-92BC-648FBFF73244/f:ScreenCapture.cs" caret="1395" fromTop="15" />
+      <File id="5F97ECAF-4625-42C3-8869-38D6EA564A13/f:Form1.cs" caret="356" fromTop="18" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Views/d:Shared/d:M/f:_Layout.cshtml" caret="0" fromTop="0" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Views/d:Shared/d:M/f:_LogOnPartial.cshtml" caret="0" fromTop="0" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:css/f:Mobile.css" caret="428" fromTop="33" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Views/d:Account/f:LogOn.cshtml" caret="1238" fromTop="25" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Views/d:Home/f:Index.cshtml" caret="157" fromTop="10" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Views/d:Shared/d:M/f:_Layout_Full.cshtml" caret="2442" fromTop="20" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Views/d:Shared/f:_Layout.cshtml" caret="1000" fromTop="22" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Controllers/f:TestController.cs" caret="851" fromTop="17" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Views/d:Test/f:Index.cshtml" caret="104" fromTop="6" />
+      <File id="594D386E-778E-44E3-9A54-DEBB306F56A2/d:Views/d:Test/d:M/f:Index.cshtml" caret="184" fromTop="6" />
+      <File id="5F97ECAF-4625-42C3-8869-38D6EA564A13/f:Form1.Designer.cs" caret="0" fromTop="0" />
+      <File id="5F97ECAF-4625-42C3-8869-38D6EA564A13/d:Test/f:ScreenCapture.cs" caret="890" fromTop="25" />
+      <File id="C3F9B763-775F-45E0-B049-2F17260FC53A/f:UnitTest1.cs" caret="0" fromTop="0" />
+      <File id="5F97ECAF-4625-42C3-8869-38D6EA564A13/d:Test/f:ScreenCapture.Designer.cs" caret="621" fromTop="17" />
+      <File id="3C06AAA0-8139-439F-92BC-648FBFF73244/f:User32.cs" caret="2859" fromTop="14" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="1186" fromTop="16" />
+      <File id="C3F9B763-775F-45E0-B049-2F17260FC53A/f:TestTest.cs" caret="1768" fromTop="8" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="5F97ECAF-4625-42C3-8869-38D6EA564A13/d:Test/f:ScreenCapture.Designer.cs" caret="0" fromTop="0" />
+      <File id="5F97ECAF-4625-42C3-8869-38D6EA564A13/d:Test/f:ScreenCapture.Designer.cs" caret="2681" fromTop="17" />
+      <File id="5F97ECAF-4625-42C3-8869-38D6EA564A13/d:Test/f:ScreenCapture.cs" caret="801" fromTop="24" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="134" fromTop="6" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="288" fromTop="17" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="360" fromTop="25" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="879" fromTop="41" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="852" fromTop="22" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="453" fromTop="11" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="417" fromTop="9" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="770" fromTop="31" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="586" fromTop="8" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="787" fromTop="21" />
+      <File id="3C06AAA0-8139-439F-92BC-648FBFF73244/f:User32.cs" caret="2859" fromTop="14" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="1013" fromTop="11" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="1013" fromTop="9" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="1379" fromTop="19" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="1225" fromTop="19" />
+      <File id="C3F9B763-775F-45E0-B049-2F17260FC53A/f:TestTest.cs" caret="2093" fromTop="21" />
+      <File id="C3F9B763-775F-45E0-B049-2F17260FC53A/f:TestTest.cs" caret="2093" fromTop="19" />
+      <File id="C3F9B763-775F-45E0-B049-2F17260FC53A/f:TestTest.cs" caret="2122" fromTop="21" />
+      <File id="FB75C9BF-92E9-47AD-8541-3BB432764BC8/f:EnumType.cs" caret="1186" fromTop="16" />
+      <File id="C3F9B763-775F-45E0-B049-2F17260FC53A/f:TestTest.cs" caret="2095" fromTop="15" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Stream`0" priority="2" />
+      <Item value="new" priority="6" />
+      <Item value="StreamWriter`0" priority="0" />
+      <Item value="StreamReader`0" priority="0" />
+      <Item value="fullPath" priority="0" />
+      <Item value="return" priority="8" />
+      <Item value="File`0" priority="0" />
+      <Item value="reader" priority="0" />
+      <Item value="FileStream`0" priority="0" />
+      <Item value="Open" priority="0" />
+      <Item value="this" priority="0" />
+      <Item value="image" priority="1" />
+      <Item value="EventArgs`0" priority="0" />
+      <Item value="if" priority="1" />
+      <Item value="IntPtr`0" priority="1" />
+      <Item value="processes" priority="2" />
+      <Item value="Length" priority="0" />
+      <Item value="hwnd" priority="0" />
+      <Item value="BufferedStream`0" priority="0" />
+      <Item value="result" priority="0" />
+      <Item value="stream" priority="1" />
+      <Item value="Begin" priority="0" />
+      <Item value="string" priority="0" />
+      <Item value="public" priority="21" />
+      <Item value="class" priority="12" />
+      <Item value="enum" priority="2" />
+      <Item value="dynamic" priority="1" />
+      <Item value="Cargo`0" priority="0" />
+      <Item value="void" priority="2" />
+      <Item value="ContainerWindow`0" priority="1" />
+      <Item value="_AppDomain`0" priority="0" />
+      <Item value="Tab`0" priority="0" />
+      <Item value="Command`0" priority="0" />
+      <Item value="Environment`0" priority="0" />
+      <Item value="Keyboard`0" priority="3" />
+      <Item value="System" priority="2" />
+      <Item value="ConsoleKey`0" priority="0" />
+      <Item value="Forms" priority="0" />
+      <Item value="SendKeys`0" priority="0" />
+      <Item value="keyboard" priority="0" />
+      <Item value="Keyboard" priority="0" />
+      <Item value="Lazy" priority="0" />
+      <Item value="Lazy&lt;Timer&gt;" priority="0" />
+      <Item value="TestMethod" priority="0" />
+      <Item value="cw" priority="0" />
+      <Item value="Action`0" priority="0" />
+      <Item value="static" priority="0" />
+      <Item value="p" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EveOnline.Test.ScreenCapture">
+      <Item value="pictureBox1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.PictureBox">
+      <Item value="Image" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IntPtr">
+      <Item value="Zero" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Process">
+      <Item value="GetProcessesByName`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.Process">
+      <Item value="MainWindowHandle" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SystemLib.User32">
+      <Item value="FindWindow`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Image">
+      <Item value="Dispose`0" priority="0" />
+      <Item value="Save`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="Seek`0" priority="0" />
+      <Item value="Flush`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Imaging.ImageFormat">
+      <Item value="Jpeg" priority="0" />
+      <Item value="Png" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.SendKeys">
+      <Item value="Send`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Lazy`1">
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EveEnv.Keyboard">
+      <Item value="SendKeys`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Tasks.Task">
+      <Item value="Factory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Tasks.TaskFactory">
+      <Item value="StartNew`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Tasks.Task">
+      <Item value="ContinueWith`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

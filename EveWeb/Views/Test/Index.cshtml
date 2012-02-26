@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Index"; 
+}
+
+<img id="img1" src="@Url.Content("~/Test/ShowImage2")" />
+
+ 
+<script type="text/javascript">    
+    function update2() {
+        window.setTimeout(update2, 1000);
+        document.getElementById("img1");
+        img1.src = "@Url.Content("~/Test/ShowImage2")" + "/"  + (new Date().getTime());
+    }
+    update2();
+</script>
+ 

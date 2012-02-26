@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/M/_Layout_Full.cshtml";
+}
+
+<section class="content">
+<div style="position:absolute;top:-30px;left:-8px;">
+<img id="img1" src="@Url.Content("~/Test/ShowImage2")" />
+<script type="text/javascript">    
+    function update2() {
+        window.setTimeout(update2, 1000);
+        document.getElementById("img1");
+        img1.src = "@Url.Content("~/Test/ShowImage2")" + "/"  + (new Date().getTime());
+    }
+    update2();
+</script>
+</div>
+</section>

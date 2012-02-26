@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="006fddd2-c13a-4a96-8ca0-c6fad259b59b" name="moctis@MOCPC 2012-02-26 23:17:56" runUser="MocPC\moctis" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="368e879d-e959-4889-810e-dd16780118e7">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="moctis_MOCPC 2012-02-26 23_17_56" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-02-26T23:17:56.8240781+07:00" queuing="2012-02-26T23:17:58.8514219+07:00" start="2012-02-26T23:17:59.7625547+07:00" finish="2012-02-26T23:18:01.0076719+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ProcessTest" storage="d:\projects\gamebot\testproject1\bin\debug\testproject1.dll" id="f8c6f141-cbd8-5fb9-aab2-e8a6d32ccf66">
+      <Execution timeOut="1800000" id="d9659daa-c233-41fa-bc97-31e77880e247" />
+      <TestMethod codeBase="D:/Projects/GameBot/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.MoveCargoAITest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ProcessTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f8c6f141-cbd8-5fb9-aab2-e8a6d32ccf66" executionId="d9659daa-c233-41fa-bc97-31e77880e247" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d9659daa-c233-41fa-bc97-31e77880e247" testId="f8c6f141-cbd8-5fb9-aab2-e8a6d32ccf66" testName="ProcessTest" computerName="MOCPC" duration="00:00:00.3978315" startTime="2012-02-26T23:17:59.9900937+07:00" endTime="2012-02-26T23:18:00.5223203+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9659daa-c233-41fa-bc97-31e77880e247">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject1.MoveCargoAITest.ProcessTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at EVEBotAI.MoveCargoAi.Process() in D:\Projects\GameBot\EVEBotAI\MoveCargoAi.cs:line 11
+   at TestProject1.MoveCargoAITest.ProcessTest() in D:\Projects\GameBot\TestProject1\MoveCargoAITest.cs:line 63
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
