@@ -1,0 +1,5 @@
+D:\My Projects\GameBot\EveFile\bin\Debug\EveFile.dll
+D:\My Projects\GameBot\EveFile\bin\Debug\EveFile.pdb
+D:\My Projects\GameBot\EveFile\obj\Debug\ResolveAssemblyReference.cache
+D:\My Projects\GameBot\EveFile\obj\Debug\EveFile.dll
+D:\My Projects\GameBot\EveFile\obj\Debug\EveFile.pdb

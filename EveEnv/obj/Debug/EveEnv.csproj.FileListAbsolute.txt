@@ -1,0 +1,7 @@
+D:\My Projects\GameBot\EveEnv\bin\Debug\EveEnv.dll
+D:\My Projects\GameBot\EveEnv\bin\Debug\EveEnv.pdb
+D:\My Projects\GameBot\EveEnv\bin\Debug\SystemLib.dll
+D:\My Projects\GameBot\EveEnv\bin\Debug\SystemLib.pdb
+D:\My Projects\GameBot\EveEnv\obj\Debug\ResolveAssemblyReference.cache
+D:\My Projects\GameBot\EveEnv\obj\Debug\EveEnv.dll
+D:\My Projects\GameBot\EveEnv\obj\Debug\EveEnv.pdb

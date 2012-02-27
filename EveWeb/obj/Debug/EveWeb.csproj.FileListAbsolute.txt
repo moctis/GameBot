@@ -1,0 +1,7 @@
+D:\My Projects\GameBot\EveWeb\bin\EveWeb.dll
+D:\My Projects\GameBot\EveWeb\bin\EveWeb.pdb
+D:\My Projects\GameBot\EveWeb\bin\SystemLib.dll
+D:\My Projects\GameBot\EveWeb\bin\SystemLib.pdb
+D:\My Projects\GameBot\EveWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\My Projects\GameBot\EveWeb\obj\Debug\EveWeb.dll
+D:\My Projects\GameBot\EveWeb\obj\Debug\EveWeb.pdb

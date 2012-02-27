@@ -1,0 +1,5 @@
+D:\My Projects\GameBot\SystemLib\bin\Debug\SystemLib.dll
+D:\My Projects\GameBot\SystemLib\bin\Debug\SystemLib.pdb
+D:\My Projects\GameBot\SystemLib\obj\Debug\ResolveAssemblyReference.cache
+D:\My Projects\GameBot\SystemLib\obj\Debug\SystemLib.dll
+D:\My Projects\GameBot\SystemLib\obj\Debug\SystemLib.pdb
