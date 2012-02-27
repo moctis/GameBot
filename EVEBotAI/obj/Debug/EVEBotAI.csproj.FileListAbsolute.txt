@@ -1,9 +1,0 @@
-D:\My Projects\GameBot\EVEBotAI\bin\Debug\EVEBotAI.dll
-D:\My Projects\GameBot\EVEBotAI\bin\Debug\EVEBotAI.pdb
-D:\My Projects\GameBot\EVEBotAI\bin\Debug\EveEnv.dll
-D:\My Projects\GameBot\EVEBotAI\bin\Debug\SystemLib.dll
-D:\My Projects\GameBot\EVEBotAI\bin\Debug\EveEnv.pdb
-D:\My Projects\GameBot\EVEBotAI\bin\Debug\SystemLib.pdb
-D:\My Projects\GameBot\EVEBotAI\obj\Debug\ResolveAssemblyReference.cache
-D:\My Projects\GameBot\EVEBotAI\obj\Debug\EVEBotAI.dll
-D:\My Projects\GameBot\EVEBotAI\obj\Debug\EVEBotAI.pdb

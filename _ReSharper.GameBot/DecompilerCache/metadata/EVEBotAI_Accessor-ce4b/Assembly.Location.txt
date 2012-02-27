@@ -1,1 +1,0 @@
-D:\My Projects\GameBot\TestProject1\obj\Debug\EVEBotAI_Accessor.dll
