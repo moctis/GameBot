@@ -1,20 +1,26 @@
-﻿namespace EveEnv
+﻿// sss
+namespace EveEnv
 {
+    #region
+
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
 
-    using Enumerable = System.Linq.Enumerable;
+    #endregion
 
     public class BaseEveClient
     {
+        #region Methods
+
         protected List<string> GetProcessList()
         {
             return
-                Enumerable.ToList<string>(
-                    (from process in Process.GetProcesses()
-                     where process.MainWindowTitle.StartsWith("EVE")
-                     select process.MainWindowTitle));
+                (from process in Process.GetProcesses()
+                 where process.MainWindowTitle.StartsWith("EVE")
+                 select process.MainWindowTitle).ToList();
         }
+
+        #endregion
     }
 }

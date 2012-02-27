@@ -1,12 +1,15 @@
-﻿namespace EVEBotAI
+﻿// sss
+namespace EVEBotAI
 {
-    using System;
+    #region
 
     using EveEnv;
 
+    #endregion
+
     public abstract class EveAI : IEveAI
     {
-        public string PlayerName { get; set; }
+        #region Properties
 
         public EveClient Client
         {
@@ -15,17 +18,37 @@
                 return Env.EveClients[this.PlayerName];
             }
         }
-         
-        public abstract void Process();
+
+        public string PlayerName { get; set; }
+
+        #endregion
+
+        #region Public Methods
 
         public static MoveCargoAi CreateMoveCargo(string playerName)
         {
-            return new MoveCargoAi {PlayerName = playerName};
+            return new MoveCargoAi { PlayerName = playerName };
         }
+
+        #endregion
+
+        #region Implemented Interfaces
+
+        #region IEveAI
+
+        public abstract void Process();
+
+        #endregion
+
+        #endregion
     }
 
     public interface IEveAI
-    { 
+    {
+        #region Public Methods
+
         void Process();
+
+        #endregion
     }
 }
