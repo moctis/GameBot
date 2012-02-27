@@ -33,8 +33,7 @@ namespace EveEnv
 
         public void Update()
         {
-            var list = from process in Process.GetProcesses()
-                       where process.MainWindowTitle.StartsWith("EVE")
+            var list = from process in Process.GetProcessesByName("ExeFile")
                        select process;
 
             foreach (var p in list)

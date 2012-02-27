@@ -42,11 +42,7 @@ namespace EVEBotAI
 
         #endregion
     }
-
-    public class Test22
-    {
-        
-    }
+ 
     public interface IEveAI
     {
         #region Public Methods
