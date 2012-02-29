@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using EVEBotAI;
 
 namespace EveOnline
 {
@@ -15,7 +16,9 @@ namespace EveOnline
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var form = new MainForm();
+            AIMain.Instance.Run();            
+            Application.Run(form);
         }
     }
 }

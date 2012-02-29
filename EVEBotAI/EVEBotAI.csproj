@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AIMain.cs" />
+    <Compile Include="AIProcess.cs" />
     <Compile Include="EnumType.cs" />
     <Compile Include="EveAI.cs" />
     <Compile Include="EveAIFactory.cs" />

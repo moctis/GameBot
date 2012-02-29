@@ -1,6 +1,6 @@
 ﻿namespace EveOnline
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,27 +30,18 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 434);
-            this.DoubleBuffered = true;
-            this.ForeColor = System.Drawing.Color.White;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.Opacity = 0.8D;
-            this.ShowIcon = false;
-            this.Text = "Form1";
-            this.TopMost = true;
-            this.TransparencyKey = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(133, 344);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "MainForm";
+            this.Text = "MainForm";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
     }
 }
-
