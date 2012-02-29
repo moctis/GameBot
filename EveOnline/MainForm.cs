@@ -15,10 +15,11 @@ namespace EveOnline
         public MainForm()
         {
             InitializeComponent();
-            AIMain.Instance.OnMessage += new AIMain.OnMessageDelegate(Instance_OnMessage);
+            var aiMain = AIMain.Instance();
+            aiMain.OnMessage += Instance_OnMessage;
         }
 
-        void Instance_OnMessage(object sender, string message)
+        private void Instance_OnMessage(object sender, string message)
         {
             Console.WriteLine(message);
         }

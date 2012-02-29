@@ -1,4 +1,6 @@
-﻿namespace EveOnline
+﻿using System;
+
+namespace EveOnline
 {
     partial class MainForm
     {

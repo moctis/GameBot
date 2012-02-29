@@ -8,21 +8,23 @@ namespace EVEBotAI
     {
         private static AIProcess _instance;
 
-        public static AIProcess Instance
+        public static AIProcess Instance()
         {
-            get { return _instance ?? (_instance = new AIProcess()); }
+            return _instance ?? (_instance = new AIProcess());
         }
 
-        public BaseProcess DetectEveProcess = new DetectEveProcess();
+
 
         public void Run()
         {
-            DetectEveProcess.Run();
+            DetectEveProcess.Instance().Run();
         }
     }
 
     internal class DetectEveProcess : BaseProcess
-    { 
+    {
+        private static DetectEveProcess _instance;
+
         protected override bool ProcessRun()
         {
             var builder = new StringBuilder();
@@ -37,6 +39,11 @@ namespace EVEBotAI
         protected override void SetInterval()
         {
             Interval = TimeSpan.FromSeconds(30);
+        }
+
+        public static DetectEveProcess Instance()
+        {
+            return _instance ?? (_instance = new DetectEveProcess());
         }
     }
 

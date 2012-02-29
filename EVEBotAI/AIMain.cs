@@ -24,8 +24,8 @@ namespace EVEBotAI
 
         public static void InvokeOnMessage(string message)
         {
-            var handler = Instance.OnMessage;
-            if (handler != null) handler(Instance, message);
+            var handler = Instance().OnMessage;
+            if (handler != null) handler(Instance(), message);
         }
 
         public void InvokeOnStoped(EventArgs e)
@@ -41,13 +41,13 @@ namespace EVEBotAI
         }
 
 
-        public static AIMain Instance
+        public static AIMain Instance()
         {
-            get { return _instance ?? (_instance = new AIMain()); }
+            return _instance ?? (_instance = new AIMain());
         }
 
-   
-        
+
+
         public void Run()
         {
             th = new Thread(MainLoop);
@@ -65,7 +65,7 @@ namespace EVEBotAI
                 Thread.Sleep(1000);
                 try
                 {
-                    AIProcess.Instance.Run();
+                    AIProcess.Instance().Run();
                 }
                 catch (ThreadAbortException)
                 {
