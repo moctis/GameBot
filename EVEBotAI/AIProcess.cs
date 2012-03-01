@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Text;
+using System.Threading;
+using SystemLib;
 using EveEnv;
 
 namespace EVEBotAI
@@ -18,9 +20,37 @@ namespace EVEBotAI
         public void Run()
         {
             DetectEveProcess.Instance().Run();
+            LoopActiveProcess.Instance().Run();
         }
     }
+    internal class LoopActiveProcess : BaseProcess
+    {
+        private static LoopActiveProcess _instance;
+        public int index = 0;
+        private const int DELAY = 10;
 
+        protected override bool ProcessRun()
+        {
+            foreach (var client in Env.EveClients)
+            {
+                var process = client.Value.Process;
+                AIMain.InvokeOnMessage(client.Key);
+                User32.SetForegroundWindow(process.MainWindowHandle);
+                Thread.Sleep(TimeSpan.FromSeconds(DELAY));
+            }
+            return true;
+        }
+
+        protected override void SetInterval()
+        {
+            Interval = TimeSpan.FromSeconds(DELAY * Env.EveClients.Count);
+        }
+
+        public static LoopActiveProcess Instance()
+        {
+            return _instance ?? (_instance = new LoopActiveProcess());
+        }
+    }
     internal class DetectEveProcess : BaseProcess
     {
         private static DetectEveProcess _instance;
@@ -28,6 +58,8 @@ namespace EVEBotAI
         protected override bool ProcessRun()
         {
             var builder = new StringBuilder();
+
+            Env.EveClients.Update();
             foreach (var eveClient in Env.EveClients)
             {
                 builder.AppendFormat("{0} | ", eveClient.Value.PilotName);

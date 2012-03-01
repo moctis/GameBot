@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 using EVEBotAI;
 
@@ -21,7 +22,15 @@ namespace EveOnline
 
         private void Instance_OnMessage(object sender, string message)
         {
-            Console.WriteLine(message);
+            S(() =>
+                  {
+                      label1.Text = message;
+                  });
+        }
+
+        private void S(Action action)
+        {
+            Invoke(action);
         }
     }
 }

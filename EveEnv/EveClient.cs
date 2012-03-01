@@ -17,12 +17,17 @@ namespace EveEnv
         {
             _process = process;
             var title = process.MainWindowTitle;
-            PilotName = title.Length > 6 ? title.Remove(0, 6) : string.Empty;
+            PilotName = title.Length > 6 ? title.Remove(0, 6) : process.MainWindowHandle.ToString();
 
             Screen = new EveScreen(process);
             Windows = new EveWindowList(Screen.Location);
         }
- 
+
+
+        public Process Process
+        {
+            get { return _process; }
+        }
 
         public string PilotName { get; set; }
 
