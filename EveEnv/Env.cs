@@ -36,13 +36,27 @@ namespace EveEnv
 
         public void Update()
         {
-            var list = from process in Process.GetProcessesByName("ExeFile")
-                       select process;
+            //var list = from process in Process.GetProcessesByName("ExeFile")
+            //           select process;
 
-            foreach (var p in list)
+            //foreach (var p in list)
+            //{
+            //    var client = new EveClient(p);
+            //    if (!this.ContainsKey(client.PilotName)) this[client.PilotName] = client;
+            //}
+            var tempHwnd = User32.FindWindow(null, null);
+            while (tempHwnd != IntPtr.Zero)
             {
-                var client = new EveClient(p);
-                if (!this.ContainsKey(client.PilotName)) this[client.PilotName] = client;
+                var text = User32.GetText(tempHwnd);
+                if (text.StartsWith("EVE - "))
+                {
+                    var client = new EveClient(tempHwnd, text);
+                    if (!string.IsNullOrEmpty(client.PilotName) && !this.ContainsKey(client.PilotName))
+                    {
+                        this[client.PilotName] = client;
+                    }
+                }
+                tempHwnd = User32.GetWindow(tempHwnd, User32.GetWindow_Cmd.GW_HWNDNEXT);
             }
         }
 
@@ -53,7 +67,7 @@ namespace EveEnv
             while (tempHwnd != IntPtr.Zero)
             {
                 var text = User32.GetText(tempHwnd);
-                if (text.StartsWith("EVE"))
+                if (text.StartsWith("EVE - "))
                     list.Add(string.Format("Window Hanlde: {0} - {1}", tempHwnd, text));
                 tempHwnd = User32.GetWindow(tempHwnd, User32.GetWindow_Cmd.GW_HWNDNEXT);
             }

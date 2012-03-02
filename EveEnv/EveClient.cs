@@ -11,22 +11,21 @@ namespace EveEnv
 
     public class EveClient : BaseEveClient, IEnvObject
     {
-        private readonly Process _process;
+        public IntPtr Hwnd { get; set; }
+
+        public string Title { get; set; }
+
+        private readonly IntPtr hwnd;
+         
  
-        public EveClient(Process process)
+        public EveClient(IntPtr hwnd, string title)
         {
-            _process = process;
-            var title = process.MainWindowTitle;
-            PilotName = title.Length > 6 ? title.Remove(0, 6) : process.MainWindowHandle.ToString();
+            Hwnd = hwnd;
+            Title = title;
 
-            Screen = new EveScreen(process);
+            this.PilotName = title.Length > 6 ? title.Remove(0, 6) : string.Empty;
+            Screen = new EveScreen(Hwnd, this.PilotName);
             Windows = new EveWindowList(Screen.Location);
-        }
-
-
-        public Process Process
-        {
-            get { return _process; }
         }
 
         public string PilotName { get; set; }

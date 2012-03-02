@@ -7,18 +7,21 @@ namespace EveEnv
 {
     public class EveScreen
     {
-        public EveScreen(Process process)
-        {
-            _process = process;
+        public IntPtr Hwnd { get; set; }
 
-            var windowRect = SystemLib.ScreenCapture.GetWindowRect(_process.MainWindowHandle);
+        public string Title { get; set; }
+
+        public EveScreen(IntPtr hwnd, string title)
+        {
+            Hwnd = hwnd;
+            Title = title;
+            var windowRect = SystemLib.ScreenCapture.GetWindowRect(Hwnd);
             BasePoint = new AiPoint(windowRect.left, windowRect.top);
             Location = new AiPoint(8, 30);
         }
 
         protected AiPoint BasePoint { get; set; }
-
-        private Process _process;
+         
 
 
         public Image bmp { get; set; }
@@ -27,13 +30,13 @@ namespace EveEnv
 
         public void SaveToFile(string fileName = null)
         {
-            if (fileName == null) fileName = @"D:\" + _process.MainWindowTitle + ".png";
+            if (fileName == null) fileName = @"D:\" + Title + ".png";
             bmp.Save(fileName, ImageFormat.Png);            
         }
 
         public void Capture()
         {
-            bmp = SystemLib.ScreenCapture.CaptureWindow(_process.MainWindowHandle, Location.X, Location.Y);
+            bmp = SystemLib.ScreenCapture.CaptureWindow(Hwnd, Location.X, Location.Y);
         }
     }
 }
