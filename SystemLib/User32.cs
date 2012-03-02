@@ -9,6 +9,8 @@
     /// </summary>
     public class User32
     {
+        public const int GW_HWNDNEXT = 2;
+
         [StructLayout(LayoutKind.Sequential)]
         public struct RECT
         {
@@ -58,6 +60,15 @@
 
         [DllImport("user32.dll", CharSet = CharSet.Auto, SetLastError = true)]
         static extern int GetWindowText(IntPtr hWnd, StringBuilder lpString, int nMaxCount);
+
+        public static string GetText(IntPtr hWnd)
+        {
+            // Allocate correct string length first
+            int length = GetWindowTextLength(hWnd);
+            StringBuilder sb = new StringBuilder(length + 1);
+            GetWindowText(hWnd, sb, sb.Capacity);
+            return sb.ToString();
+        }
 
         public enum GetWindow_Cmd : uint
         {

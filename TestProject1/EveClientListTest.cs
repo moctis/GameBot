@@ -6,8 +6,8 @@ using System;
 
 namespace TestProject1
 {
-    
-    
+    using System.Collections.Generic;
+
     /// <summary>
     ///This is a test class for EveClientListTest and is intended
     ///to contain all EveClientListTest Unit Tests
@@ -78,6 +78,18 @@ namespace TestProject1
             foreach (var process in list)
             {
                 Console.WriteLine("{0}-{1}", process.MainWindowTitle, process.ProcessName);
+            }
+        }
+
+        [TestMethod()]
+        public void GetWindowsTest()
+        {
+            var target = new EveClientList();
+
+            var actual = target.GetWindows();
+            foreach (var a in actual)
+            {
+                Console.WriteLine(a);
             }
         }
     }

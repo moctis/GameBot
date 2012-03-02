@@ -3,9 +3,12 @@ namespace EveEnv
 {
     #region
 
+    using System;
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
+
+    using SystemLib;
 
     #endregion
 
@@ -41,6 +44,20 @@ namespace EveEnv
                 var client = new EveClient(p);
                 if (!this.ContainsKey(client.PilotName)) this[client.PilotName] = client;
             }
+        }
+
+        public List<string> GetWindows()
+        {
+            var tempHwnd = User32.FindWindow(null, null);
+            var list = new List<string>();
+            while (tempHwnd != IntPtr.Zero)
+            {
+                var text = User32.GetText(tempHwnd);
+                if (text.StartsWith("EVE"))
+                    list.Add(string.Format("Window Hanlde: {0} - {1}", tempHwnd, text));
+                tempHwnd = User32.GetWindow(tempHwnd, User32.GetWindow_Cmd.GW_HWNDNEXT);
+            }
+            return list;
         }
 
         #endregion
