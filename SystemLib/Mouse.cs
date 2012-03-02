@@ -60,16 +60,18 @@ namespace SystemLib
             User32.mouse_event(MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0); 
         }
 
-        public static void DragDrop(Point p1, Point p2, int delay)
+        public static void DragDrop(Point p1, Point p2, int delay, int delay2 = -1)
         {
-            Thread.Sleep(100);
+            if (delay2 == -1) delay2 = delay;
+            Thread.Sleep(200);
             MoveTo(p1);
-            Thread.Sleep(delay);
+            Thread.Sleep(200);
             User32.mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
-            Thread.Sleep(100);
+            Thread.Sleep(delay);            
             MoveTo(p2);
-            Thread.Sleep(delay);
+            Thread.Sleep(delay2);
             User32.mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+            Thread.Sleep(200);
         }
 
         private static void MoveTo(Point p)

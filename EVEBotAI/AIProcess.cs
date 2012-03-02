@@ -6,6 +6,8 @@ using EveEnv;
 
 namespace EVEBotAI
 {
+    using System.Drawing;
+
     internal class AIProcess
     {
         private static AIProcess _instance;
@@ -33,10 +35,17 @@ namespace EVEBotAI
         {
             foreach (var client in Env.EveClients)
             {
-                var process = client.Value.Process;
+                var process = client.Value;
                 AIMain.InvokeOnMessage(client.Key);
-                User32.SetForegroundWindow(process.MainWindowHandle);
+                User32.SetForegroundWindow(process.Hwnd);
+                Thread.Sleep(TimeSpan.FromSeconds(1));
+
+                var p1 = new Point(70, 460);
+                var p2 = new Point(70, 300);
+                Mouse.DragDrop(p1, p2, 500, 200);
+
                 Thread.Sleep(TimeSpan.FromSeconds(DELAY));
+
             }
             return true;
         }

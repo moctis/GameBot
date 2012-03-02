@@ -71,14 +71,10 @@ namespace TestProject1
         [TestMethod()]
         public void MoveToTest()
         {
-            var x = 200; // TODO: Initialize to an appropriate value
-            var y = 200; // TODO: Initialize to an appropriate value
-            Mouse.MoveTo(x, y);
-            Mouse.Click();
-
-
-            var p = new Point(200, 200);
-            p.Click();
+            var p1 = new Point(70, 460);
+            var p2 = new Point(70, 300);
+            Mouse.DragDrop(p1, p2, 500, 200);
+            Mouse.DragDrop(p2, p1, 500, 200);
         }
     }
 }
