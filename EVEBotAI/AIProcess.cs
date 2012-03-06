@@ -48,7 +48,9 @@ namespace EVEBotAI
 
                 var p1 = new Point(70, 460);
                 var p2 = new Point(70, 300);
+                var p3 = new Point(405, 300);
                 Mouse.DragDrop(p1, p2, 500, 200);
+                Mouse.DragDrop(p1, p3, 500, 200);
 
                 Thread.Sleep(TimeSpan.FromSeconds(DELAY));
             }
