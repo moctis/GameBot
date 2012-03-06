@@ -25,6 +25,7 @@ namespace EVEBotAI
             LoopActiveProcess.Instance().Run();
         }
     }
+
     internal class LoopActiveProcess : BaseProcess
     {
         private static LoopActiveProcess _instance;
@@ -37,6 +38,8 @@ namespace EVEBotAI
             {
                 var process = client.Value;
                 AIMain.InvokeOnMessage(client.Key);
+
+                //WindowsHelper.ForceForegroundWindow((int)process.Hwnd);
                 User32.SetForegroundWindow(process.Hwnd);
                 Thread.Sleep(TimeSpan.FromSeconds(1));
 
