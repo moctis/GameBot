@@ -70,6 +70,26 @@
             return sb.ToString();
         }
 
+        [DllImport("user32.dll", SetLastError = true)]
+        public static extern bool ShowWindowAsync(IntPtr windowHandle, SW nCmdShow);
+
+        public enum SW : int
+        {
+            SW_HIDE = 0,
+            SW_SHOWNORMAL = 1,
+            SW_NORMAL = 1,
+            SW_SHOWMINIMIZED = 2,
+            SW_SHOWMAXIMIZED = 3,
+            SW_MAXIMIZE = 3,
+            SW_SHOWNOACTIVATE = 4,
+            SW_SHOW = 5,
+            SW_MINIMIZE = 6,
+            SW_SHOWMINNOACTIVE = 7,
+            SW_SHOWNA = 8,
+            SW_RESTORE = 9,
+            SW_SHOWDEFAULT = 10,
+            SW_MAX = 10
+        }
         public enum GetWindow_Cmd : uint
         {
             GW_HWNDFIRST = 0,
@@ -104,6 +124,42 @@
         public static extern int SetCursorPos(int x, int y);
 
         [DllImport("user32.dll")]
-        public static extern bool SetForegroundWindow(IntPtr hWnd);
+        public static extern int SetForegroundWindow(IntPtr hWnd);
+
+        /// <summary>
+        /// Win32 function: Get foreground window handle (hwnd)
+        /// </summary>
+        [DllImport("User32.dll")]
+        internal static extern int GetForegroundWindow();
+
+        /// <summary>
+        /// Win 32 function: Get window thread process id
+        /// </summary>
+        /// <param name="window">Window handle</param>
+        /// <param name="processId">Process id</param>
+        /// <returns>Thread id</returns>
+        [DllImport("user32.dll")]
+        internal static extern int GetWindowThreadProcessId(
+            int window, int processId);
+
+        /// <summary>
+        /// Win32 function: Attaches input to a thread for controlling windows
+        /// </summary>
+        [DllImport("User32.dll")]
+        internal static extern int AttachThreadInput(
+            int idAttach, int idAttachTo, int fAttach);
+
+
+        /// <summary>
+        /// Win32 function: Checks if a window is iconic (on the task bar)
+        /// </summary>
+        [DllImport("User32.dll")]
+        internal static extern int IsIconic(int hWnd);
+        /// <summary>
+        /// Win32 function: Show window with nCmdShow parameters.
+        /// </summary>
+        [DllImport("User32.dll")]
+        internal static extern int ShowWindow(int hWnd, int nCmdShow);
+
     }
 }

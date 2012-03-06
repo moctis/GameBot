@@ -11,6 +11,7 @@ namespace EVEBotAI
     public class AIMain
     {
         public delegate void OnMessageDelegate(object sender, string message, string message2);
+        public delegate void StringDelegate(object sender, string msg);
 
         public class OnStartedArgs
         {
@@ -27,6 +28,27 @@ namespace EVEBotAI
         public event EventHandler OnStoped;
 
         public event OnMessageDelegate OnMessage;
+
+        public event StringDelegate OnPlayerAdd;
+
+        public event StringDelegate OnPlayerRemove;
+
+        public event StringDelegate OnPlayerActive;
+
+
+        public void InvokeOnPlayerAdd(string msg)
+        {
+            StringDelegate handler = this.OnPlayerAdd;
+            if (handler != null) handler(this, msg);
+        }
+
+       
+
+        public void InvokeOnPlayerRemove(string msg)
+        {
+            StringDelegate handler = this.OnPlayerRemove;
+            if (handler != null) handler(this, msg);
+        }
 
         public bool IsRun { get; set; }
 
@@ -70,7 +92,7 @@ namespace EVEBotAI
                 Thread.Sleep(1000);
                 try
                 {
-                    if (this.IsRun) AIProcess.Instance().Run();
+                    if (AIMain.Instance().IsRun) AIProcess.Instance().Run();
                 }
                 catch (ThreadAbortException)
                 {

@@ -18,6 +18,43 @@ namespace EveOnline
             InitializeComponent();
             var aiMain = AIMain.Instance();
             aiMain.OnMessage += Instance_OnMessage;
+            aiMain.OnPlayerAdd += this.aiMain_OnPlayerAdd;
+            aiMain.OnPlayerRemove += this.aiMain_OnPlayerRemove;
+            aiMain.OnPlayerActive += this.aiMain_OnPlayerActive;
+        }
+
+        void aiMain_OnPlayerActive(object sender, string msg)
+        {
+            foreach (var control in this.PlayerPannel.Controls.OfType<CheckBox>())
+            {
+                if (control.Text == msg)
+                {
+                    control.ForeColor = this.ForeColor;
+                }
+                else
+                {
+                    control.ForeColor = Color.DarkSeaGreen;
+                }
+            }
+        }
+
+        void aiMain_OnPlayerRemove(object sender, string msg)
+        {
+            foreach (var control in this.PlayerPannel.Controls.OfType<CheckBox>())
+            {
+                if (control.Text == msg)
+                {
+                    this.PlayerPannel.Controls.Remove(control);
+                    break;
+                }
+            }
+        }
+
+        void aiMain_OnPlayerAdd(object sender, string msg)
+        {
+            var checkBox = new CheckBox();
+            checkBox.Text = msg;
+            PlayerPannel.Controls.Add(checkBox);
         }
 
         private void Instance_OnMessage(object sender, string message, string message2)
