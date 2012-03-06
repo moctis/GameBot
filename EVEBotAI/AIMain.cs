@@ -70,7 +70,7 @@ namespace EVEBotAI
                 Thread.Sleep(1000);
                 try
                 {
-                    if (this.IsRun) AIProcess.Instance().Run();
+                    if (AIMain.Instance().IsRun) AIProcess.Instance().Run();
                 }
                 catch (ThreadAbortException)
                 {

@@ -36,10 +36,13 @@ namespace EVEBotAI
         {
             foreach (var client in Env.EveClients)
             {
+                if (!AIMain.Instance().IsRun) return true;
+
                 var process = client.Value;
                 AIMain.InvokeOnMessage(client.Key);
 
                 //WindowsHelper.ForceForegroundWindow((int)process.Hwnd);
+                Thread.Sleep(TimeSpan.FromSeconds(1));
                 User32.SetForegroundWindow(process.Hwnd);
                 Thread.Sleep(TimeSpan.FromSeconds(1));
 
@@ -48,7 +51,6 @@ namespace EVEBotAI
                 Mouse.DragDrop(p1, p2, 500, 200);
 
                 Thread.Sleep(TimeSpan.FromSeconds(DELAY));
-
             }
             return true;
         }
