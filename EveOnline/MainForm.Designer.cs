@@ -31,14 +31,13 @@ namespace EveOnline
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.Point2 = new System.Windows.Forms.Button();
             this.Point1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.RunStopButton = new System.Windows.Forms.Button();
             this.QuitButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +45,6 @@ namespace EveOnline
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DimGray;
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.Point2);
             this.panel1.Controls.Add(this.Point1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -54,15 +52,6 @@ namespace EveOnline
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1024, 768);
             this.panel1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(401, 293);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(16, 16);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Point2
             // 
@@ -93,6 +82,15 @@ namespace EveOnline
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1024, 72);
             this.panel2.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Location = new System.Drawing.Point(264, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 16);
+            this.label2.TabIndex = 5;
             // 
             // RunStopButton
             // 
@@ -128,16 +126,6 @@ namespace EveOnline
             this.label1.TabIndex = 2;
             this.label1.Text = "Hello, World. How are you today?";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Location = new System.Drawing.Point(264, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(264, 16);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Hello, World. How are you today?";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -171,7 +159,6 @@ namespace EveOnline
         private System.Windows.Forms.Button QuitButton;
         private System.Windows.Forms.Button Point2;
         private System.Windows.Forms.Button Point1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button RunStopButton;
         private System.Windows.Forms.Label label2;
 
