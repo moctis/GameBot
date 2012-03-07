@@ -62,7 +62,7 @@ namespace EveOnline
             S(() =>
                   {
                       if (message != "") label1.Text = message;
-                      if (message2 != "") label2.Text = message2;
+                      //if (message2 != "") label2.Text = message2;
                   });
         }
 
