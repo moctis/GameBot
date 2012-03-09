@@ -60,16 +60,9 @@ namespace EveOnline.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap eb11f6f2 {
+        internal static System.Drawing.Icon eb11f6f21 {
             get {
-                object obj = ResourceManager.GetObject("eb11f6f2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Icon Icon1 {
-            get {
-                object obj = ResourceManager.GetObject("Icon1", resourceCulture);
+                object obj = ResourceManager.GetObject("eb11f6f21", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
