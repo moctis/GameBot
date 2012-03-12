@@ -41,8 +41,8 @@ namespace EVEBotAI
                 var process = client.Value;
                 AIMain.InvokeOnMessage(client.Key);
 
-                WindowsHelper.ForceForegroundWindow((int)process.Hwnd);
-                Thread.Sleep(TimeSpan.FromSeconds(1));
+                //WindowsHelper.ForceForegroundWindow((int)process.Hwnd);
+                //Thread.Sleep(TimeSpan.FromSeconds(1));
                 User32.SetForegroundWindow(process.Hwnd);
                 Thread.Sleep(TimeSpan.FromSeconds(1));
 
