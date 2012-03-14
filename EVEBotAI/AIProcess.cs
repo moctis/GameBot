@@ -41,7 +41,7 @@ namespace EVEBotAI
                 var process = client.Value;
                 AIMain.InvokeOnMessage(client.Key);
 
-                //WindowsHelper.ForceForegroundWindow((int)process.Hwnd);
+                WindowsHelper.ForceForegroundWindow((int)process.Hwnd);
                 Thread.Sleep(TimeSpan.FromSeconds(1));
                 User32.SetForegroundWindow(process.Hwnd);
                 Thread.Sleep(TimeSpan.FromSeconds(1));
@@ -51,7 +51,9 @@ namespace EVEBotAI
                 var p3 = new Point(405, 300);
 
                 Mouse.DragDrop(p1, p2, 500, 200);
+                //Keyboard.Send("abc{ENTER}");
                 Mouse.DragDrop(p1, p3, 500, 200);
+                //Keyboard.Send("{ENTER}");
 
                 Thread.Sleep(TimeSpan.FromSeconds(DELAY));
 

@@ -29,7 +29,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.html</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>10</ApplicationRevision>
+    <ApplicationRevision>15</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -70,7 +70,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\Icon1.ico</ApplicationIcon>
+    <ApplicationIcon>eb11f6f2.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -162,9 +162,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="eb11f6f2.ico" />
     <Content Include="Pointer.bmp" />
-    <None Include="Resources\Icon1.ico" />
-    <None Include="Resources\eb11f6f2.png" />
+    <None Include="Resources\eb11f6f2.ico" />
     <None Include="Resources\Pointer.png" />
   </ItemGroup>
   <ItemGroup>
