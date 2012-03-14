@@ -16,9 +16,10 @@ namespace EveOnline
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            var form = new MainForm();
-            AIMain.Instance().Run();            
-            Application.Run(form);
+            //var form = new MainForm();
+            //AIMain.Instance().Run();            
+            //Application.Run(form);
+            Application.Run(new LocationConfig());
         }
     }
 }
