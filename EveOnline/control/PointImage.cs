@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,24 @@ namespace EveOnline.control
    {
         private bool IsHover = false;
         private Pen selectPen = new Pen(Brushes.Red, 5);
+        public event EventHandler OnSelect;
+
+        public void InvokeOnSelect(EventArgs e)
+        {
+            EventHandler handler = OnSelect;
+            if (handler != null) handler(this, e);
+        }
 
         public PointImage()
         {
-            ControlMover.Init(this, this, ControlMover.Direction.Any); 
+            ControlMover.Init(this, this, ControlMover.Direction.Any);
+            MouseDown += delegate(object sender, MouseEventArgs e)
+                             {
+                                 var handler = OnSelect;
+                                 if (handler != null) handler(this, EventArgs.Empty);
+                             };
         }
+
         protected override void OnPaint(PaintEventArgs e)
         {
             

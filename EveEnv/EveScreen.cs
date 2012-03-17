@@ -10,14 +10,15 @@ namespace EveEnv
         public IntPtr Hwnd { get; set; }
 
         public string Title { get; set; }
-
+ 
         public EveScreen(IntPtr hwnd, string title)
         {
             Hwnd = hwnd;
             Title = title;
             var windowRect = SystemLib.ScreenCapture.GetWindowRect(Hwnd);
             BasePoint = new AiPoint(windowRect.left, windowRect.top);
-            Location = new AiPoint(8, 30);
+            //Location = new AiPoint(8, 30);
+            Location = new AiPoint(0, 0);
         }
 
         protected AiPoint BasePoint { get; set; }
