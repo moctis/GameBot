@@ -31,6 +31,15 @@ namespace EveEnv
         public void Capture()
         {
             bmp = Window.CaptureWindow();
+            InvokeOnCapture(EventArgs.Empty);
+        }
+
+        public event EventHandler OnCapture;
+
+        public void InvokeOnCapture(EventArgs e)
+        {
+            EventHandler handler = OnCapture;
+            if (handler != null) handler(this, e);
         }
     }
 }
