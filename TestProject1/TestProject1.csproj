@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnvTest.cs" />
+    <Compile Include="EnvWindowListTest.cs" />
     <Compile Include="EveClientListTest.cs" />
     <Compile Include="EveFileTest.cs" />
     <Compile Include="EveScreenTest.cs" />

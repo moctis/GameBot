@@ -7,37 +7,30 @@ namespace EveEnv
 {
     public class EveScreen
     {
-        public IntPtr Hwnd { get; set; }
+        public EnvWindow Window { get; set; }  
 
-        public string Title { get; set; }
- 
-        public EveScreen(IntPtr hwnd, string title)
+        public EveScreen(EnvWindow window)
         {
-            Hwnd = hwnd;
-            Title = title;
-            var windowRect = SystemLib.ScreenCapture.GetWindowRect(Hwnd);
+            Window = window;
+            var windowRect = window.GetWindowRect(window.Hwnd);
             BasePoint = new AiPoint(windowRect.left, windowRect.top);
             //Location = new AiPoint(8, 30);
             Location = new AiPoint(0, 0);
         }
 
         protected AiPoint BasePoint { get; set; }
-         
-
-
         public Image bmp { get; set; }
-
         public AiPoint Location { get; set; }
 
         public void SaveToFile(string fileName = null)
         {
-            if (fileName == null) fileName = @"D:\" + Title + ".png";
+            if (fileName == null) fileName = @"D:\" + Window.Title + ".png";
             bmp.Save(fileName, ImageFormat.Png);            
         }
 
         public void Capture()
         {
-            bmp = SystemLib.ScreenCapture.CaptureWindow(Hwnd, Location.X, Location.Y);
+            bmp = Window.CaptureWindow();
         }
     }
 }

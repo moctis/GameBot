@@ -20,11 +20,14 @@ namespace EveEnv
  
         public EveClient(IntPtr hwnd, string title)
         {
-            Hwnd = hwnd;
-            Title = title;
+           
+        }
 
-            this.PilotName = title.Length > 6 ? title.Remove(0, 6) : string.Empty;
-            Screen = new EveScreen(Hwnd, this.PilotName);
+        public EveClient(EnvWindow window)
+        {
+            Hwnd = hwnd;
+            PilotName = window.Title;
+            Screen = new EveScreen(window);
             Windows = new EveWindowList(Screen.Location);
         }
 
