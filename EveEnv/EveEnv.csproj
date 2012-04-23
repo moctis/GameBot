@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseEveClient.cs" />
+    <Compile Include="EnvWindow.cs" />
+    <Compile Include="EnvWindowList.cs" />
+    <Compile Include="EveClientList.cs" />
     <Compile Include="EveScreen.cs" />
     <Compile Include="IEnvObject.cs" />
     <Compile Include="Env.cs" />

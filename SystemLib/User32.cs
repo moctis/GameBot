@@ -130,7 +130,7 @@
         /// Win32 function: Get foreground window handle (hwnd)
         /// </summary>
         [DllImport("User32.dll")]
-        internal static extern int GetForegroundWindow();
+        public static extern int GetForegroundWindow();
 
         /// <summary>
         /// Win 32 function: Get window thread process id
