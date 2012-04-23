@@ -6,6 +6,7 @@ using EveEnv;
 
 namespace EVEBotAI
 {
+    using System.Diagnostics;
     using System.Drawing;
 
     internal class AIProcess
@@ -22,7 +23,7 @@ namespace EVEBotAI
         public void Run()
         {
             DetectEveProcess.Instance().Run();
-            LoopActiveProcess.Instance().Run();
+            LoopActiveProcess.Instance().Run(); 
         }
     }
 

@@ -55,15 +55,7 @@ namespace TestProject1
         //
         #endregion
 
-
-        [TestMethod()]
-        [DeploymentItem("EVEBotAI.dll")]
-        public void testTest()
-        {
-            EVEBotAI.Test_Accessor target = new EVEBotAI.Test_Accessor(); // TODO: Initialize to an appropriate value
-            target.test();
-        }
-
+ 
 
         [TestMethod()]
         public void Test()
